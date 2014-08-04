@@ -76,7 +76,8 @@ do {                                              \
     } else                                        \
         (b).end = 0;                              \
 } while (0)
-
+#define BSB_EXPORT_skip(b, size)
+do
 #define BSB_EXPORT_skip(b, size)                  \
 do {                                              \
     if ((b).ptr + size <= (b).end) {              \
